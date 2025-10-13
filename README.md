@@ -24,6 +24,29 @@
 
 ###
 
+## Öne Çıkan Projeler
+
+- **[labubu](https://github.com/Bakitoplu/labubu)**  
+  Sesli asistan betiğini 7-13 Ekim 2025 arasında kademeli olarak yayınladım.  
+  - 7 Ekim: altyapı ve persona dosyaları  
+  - 8-11 Ekim: ses kaydı, STT, Ollama entegrasyonu ve TTS  
+  - 12 Ekim: konuşma döngüsü ve macOS TTS  
+  - 13 Ekim: uzak depo temizliği, final paketleme
+
+- **[yugiohsearch](https://github.com/Bakitoplu/yugiohsearch)**  
+  Yu-Gi-Oh! API için CLI + çeviri aracı, 1-5 Ekim 2025 tarihli commit zinciriyle güncellendi.  
+  - 1 Ekim: temel CLI iskeleti  
+  - 2-4 Ekim: gelişmiş arama, arketip/set modülleri, filtreler ve dışa aktarma  
+  - 5 Ekim: `serverturkce.py` MarianMT çeviri scripti ve kapsamlı README
+
+## Son Güncellemeler
+
+- `2025-10-13` — `labubu` deposunda konuşma döngüsü tamamlanıp proje kapatıldı.
+- `2025-10-05` — `yugiohsearch` deposunda CLI + çeviri araçları final hale getirildi.
+- `2025-10-04` — YGOPRODeck aracı için gelişmiş filtreleme ve toplu dışa aktarma eklendi.
+
+###
+
 <div align="center">
   <a href="www.linkedin.com/in/baki-toplu" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
