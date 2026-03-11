@@ -2,25 +2,27 @@ name: generate pacman game
 
 on:
   schedule:
-    - cron: "0 */24 * * *"   # günde 1 kez
-  workflow_dispatch:         # elle çalıştır
+    - cron: "0 0 * * *"   # günde 1 kez
+  workflow_dispatch:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   generate:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: write
+
     steps:
-      - name: generate pacman-contribution-graph.svg
+      - name: generate pacman contribution graph
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      - name: push pacman-contribution-graph.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: push pacman svg
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
